@@ -22,6 +22,7 @@ valuebut.addEventListener("click",function(){
         console.log(prezzo);
 
         document.getElementById("costo").innerHTML = prezzo + "€" 
+        document.getElementById("co2").innerHTML = destinationValue * 0.02 + "Kg di CO2"
 
 });
 
