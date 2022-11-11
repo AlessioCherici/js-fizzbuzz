@@ -12,71 +12,10 @@
 </head>
 
 <body>
-    <header class="text-color container-fluid">
-        <div class="row bg-color sticky-top">
-            <div class="col mx-3 mt-3 mb-0">
-                <img id="logo" class="logo me-3" src="img/DC135EB2.png" alt="Logo">
-                <p class="text-start mb-0 fw-bolder">TRENITALIA</p>
-                <p class="text-start fs-6">Fieramente in ritardo dal 1945!</p>
-            </div>
-            <div class="col mx-3 mt-4 me-5 mb-0">
-                <p class="text-end fw-bolder">Prenota il tuo biglietto!</p>
-            </div>
-        </div>
-        <div class="row">
-        <img class="col px-0" src="img/1920x580-FR-Milano-Roma-Coll-02.jpg" alt="Trenitalia">
-        </div>
-    </header>
+    
+    <h1 class="titolo">0 to 1000 with DOM</h1>
 
-
-
-    <div class="text-center fw-bolder mt-5 mb-3">
-        <h1>Acquista il tuo biglietto</h1>
-        <h3>Partendo da
-            <!--Forza Cosenza!!-->
-            <b>Cosenza</b>
-        </h3>
-    </div>
-
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col">
-                    <div class="card shadow">
-                        <div class="card-body mb-3 mx-5 mt-3">
-                            <p>Destinazione:</p>
-                            <select id="destinazione" class="form-select" aria-label="Default select example">
-                                <option value="430">Roma</option>
-                                <option value="906">Milano</option>
-                                <option value="242">Napoli</option>
-                                <!--Ebbene si ad oggi FrecciaRossa arriva fino a Parigi!-->
-                                <option value="1530">Parigi</option>
-                            </select>
-                            <div class="mt-3">
-                                <label for="age" class="form-label">Età passeggero:</label>
-                                <input type="number" class="form-control" id="etacliente">
-                            </div>
-                            <div class="text-center mt-3">
-                                <button id="bottone" class="btn btn-primary">Submit</button>
-                            </div>
-                        </div>
-
-                        <div class="card body border border-end-0 border-start-0 border-bottom-0 text-center fw-bolder">
-                            <p class="my-3">Il Prezzo del vostro biglietto sarà di:</p>
-                        </div>
-                        <div id="costo" class="card-body border-0 text-center py-0 fs-3 mb-3"></div>
-
-                        <div class="card body border border-end-0 border-start-0 border-bottom-0 text-center fw-bolder">
-                            <p class="my-3">Scegliendo il nostro servizio, hai risparmiato:</p>
-                        </div>
-                        <div id="co2" class="card-body border-0 text-center py-0 fs-3 mb-3"></div>
-                    </div>
-                </div>
-                <div class="col"></div>  
-            </div>
-        </div>
-    </main>
+    <div id="mio-container" class="mio-container"></div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

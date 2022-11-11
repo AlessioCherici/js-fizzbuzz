@@ -1,29 +1,34 @@
-let valuebut = document.getElementById("bottone");
+let containerPrincipale = document.querySelector(".mio-container");
 
-valuebut.addEventListener("click",function(){
-    let destinazione = document.getElementById("destinazione");
-    let eta = document.getElementById("etacliente");
-    let destinationValue = destinazione.value;
-    let etaValue= eta.value;
-    console.log(destinationValue);
-    console.log(etaValue);
+for (let i = 1; i <= 100; i++) {
 
-    let prezzo = (destinationValue * 0.21);
+    let intero3 = (i / 3);
+    let intero5 = (i / 5);
+    let intero35 = (intero3 + intero5);
 
-        if (etaValue >= 65) {
-            prezzo = (prezzo - prezzo * 40 / 100);
-        }
+/* Userò una serie di if else if per capirli meglio!*/
 
-        else if (etaValue > 0 && etaValue < 18){
-            prezzo = (prezzo - prezzo * 20 / 100);
-        }
+    if (Number.isInteger(intero35) == true) {
+        console.log(intero35);
+        document.getElementById("mio-container").innerHTML += '<div class="square"><p>FizzBuzz</p></div>';
+    }
 
-        prezzo = prezzo.toFixed(2);
-        console.log(prezzo);
+    else if (Number.isInteger(intero3) == true) {
+        console.log("Ha funzionato if 3");
+        console.log(intero3);
+        document.getElementById("mio-container").innerHTML += '<div class="square"><p>Fizz</p></div>';
+    }
 
-        document.getElementById("costo").innerHTML = prezzo + "€" 
-        document.getElementById("co2").innerHTML = destinationValue * 0.02 + "Kg di CO2"
+    else if (Number.isInteger(intero5) == true) {
+        console.log("Ha funzionato if 5");
+        document.getElementById("mio-container").innerHTML += '<div class="square"><p>Buzz</p></div>';
+    }
 
-});
+    else {
+        document.getElementById("mio-container").innerHTML += '<div class="square"><p>'+i+'</p></div>'
+    }
+    
+
+}
 
 
